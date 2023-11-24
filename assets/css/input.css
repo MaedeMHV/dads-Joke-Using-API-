@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply flex h-screen justify-center items-center bg-slate-300;
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.jokesSection {
+  @apply w-[700px] h-[300px] flex flex-col justify-around items-center bg-white shadow-md shadow-zinc-700 rounded-2xl px-6;
+}
+.jokesSection h2 {
+  @apply font-bold  text-lg capitalize;
+  color: #1a2980; /* fallback for old browsers */
+  color: -webkit-linear-gradient(
+    to right,
+    #26d0ce,
+    #1a2980
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  color: linear-gradient(
+    to right,
+    #26d0ce,
+    #1a2980
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.jokesSection .btn {
+  @apply font-bold text-[#ffffff] text-lg capitalize bg-purple-700 py-3 px-6 rounded-xl;
+}
+.jokes {
+  @apply font-semibold text-[#363636];
+}
